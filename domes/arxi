@@ -1,0 +1,84 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package domes;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author akasemaj
+ */
+public class Domes {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+//        int a = 10;
+//        String name = "jack";
+//        int[] array = {2, 6, 10, 0};
+//        System.out.println(array[0]);
+//        System.out.println(array[1]);
+//        System.out.println(array[2]);
+//        System.out.println(array[3]);
+//
+//        a = 75;
+//        array[1] = a;
+//
+//        // what is the largest number in the array
+//        int max = Math.max(Math.max(Math.max(array[0], array[1]), array[2]), array[3]);
+//        System.out.println(max);
+//
+//        System.out.println();
+
+//        double [] array2 = {0, 5.5, 8.8};
+//        System.out.println(array2[0]);
+//        System.out.println(array2[1]);
+//        System.out.println(array2[2]);
+//        int length= array2.length;
+//        
+//        
+//        System.out.println("The length of array2 is "+length);
+//        
+//        System.out.println(array2.length);
+//        arrays2.length = int length;
+//        
+//        String [] names  = {"Peter", "Jack", "Mary"};
+//        
+        ArrayList<String> listofNames = new ArrayList();
+//        listofNames.add("Nick");
+//        String namee = listofNames.get(0);
+//        System.out.println("The name is" + namee);
+
+        String[] namess = {"Nick", "Peter", "Mary", "Jack", "Andy"};
+        listofNames.add("Nick");
+        listofNames.add(1, "Nick");
+        listofNames.add("Mary");
+        
+        
+        int sizeofList = listofNames.size();
+        System.out.println("Size of list is" + sizeofList);
+        
+        String newname = "Jonathan";
+        boolean find = listofNames.contains(newname);
+        if (find == true){
+            System.out.println("Jonathan exists");
+        }else{
+            listofNames.add(newname);
+    }
+        String nameinPosition3 = listofNames.get(3);
+        System.out.println("The name at index 3 is" + nameinPosition3);
+        String removeElement = listofNames.remove(2);
+        
+        
+        
+        
+        
+       
+
+    }
+
+}
